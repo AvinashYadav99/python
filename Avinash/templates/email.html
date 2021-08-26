@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+please verified your email
+      {{msg}}
+<!--<a href="http://127.0.0.1:5000/verifyEmail?email={{msg}}">-->
+<!--    Verify Email-->
+<!--</a>-->
+<form action="http://127.0.0.1:5000/verifyemail" methods=["post"]>
+     {{msg}}
+<    <input type="hidden" name="email" value="{{msg}}">
+<    <input type="submit" value="verifyemail">
+</form>
+</body>
+</html>
